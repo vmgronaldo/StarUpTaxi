@@ -6,3 +6,366 @@ body{
   margin:0;
   font-family:"sans-serif";
 }
+
+.l-container{
+  max-width:1344px;
+}
+
+.l-container,.l-container--secondary{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.l-container--secondary{
+  max-width:1024px;
+}
+
+.btn{
+  font-family:sans-serif;
+  font-size:1em;
+  border-radius:3px;
+  transition:.25s ease-out;
+}
+
+.btn--primary{
+  border:1px solid #000;
+  background:transparent;
+  color:#000;
+}
+
+.btn--primary:hover{
+  transition:.25s ease-out;
+  background:#000;
+  color:#ffc71a;
+}
+
+.btn--secondary{
+  border:none;
+  background:#000;
+  color:#fff;
+}
+
+.btn--secondary:hover{
+  transition:.25s ease-out;
+  background:#ffc71a;
+  color:#000;
+}
+
+.btn--third{
+  border:none;
+  background:#ffc71a;
+  color:#000;
+}
+
+.header__hero{
+  height:auto;
+  background-image:url(/img/hero.jpeg);
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:50%;
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  -o-object-fit:cover;
+  object-fit:cover;
+}
+
+.header__hero .header-main .contenedor-header{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  height:90px;
+  padding:50px 0;
+}
+
+.header__hero .header-main .contenedor-header .main-logo a img{
+  width:50%;
+}
+
+.header__hero .header-main .contenedor-header .content-menu .main-menu{
+  margin-left:20px;
+}
+
+.header__hero .header-main .contenedor-header .content-menu .main-menu .main-nav{
+  list-style:none;
+  padding:0;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+}
+
+.header__hero .header-main .contenedor-header .content-menu .main-menu .main-nav__item{
+  padding:0 .8em;
+  text-transform:uppercase;
+  font-family:sans-serif;
+  font-size:.8em;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.header__hero .header-main .contenedor-header .content-menu .main-menu .main-nav__item__link{
+  color:#fff;
+}
+
+.header__hero .header-main .contenedor-header .content-menu .main-menu .main-nav__item__link--active{
+  padding:10px 20px;
+  border-radius:30px;
+  background:#ffc71a;
+  color:#000;
+}
+
+.header__hero .banner-main{
+  color:#fff;
+  text-align:center;
+  font-family:sans-serif;
+  position:relative;
+}
+
+.header__hero .banner-main__content{
+  padding:50px 0 0;
+}
+
+.header__hero .banner-main__content__title{
+  margin:0;
+  color:#ffc71a;
+}
+
+.header__hero .banner-main__content__subtitle{
+  margin:0;
+  font-size:4em;
+}
+
+.header__hero .banner-main__content__web{
+  margin:0;
+  font-size:1.5em;
+}
+
+.header__hero .banner-main__content__img{
+  position:relative;
+  top:150px;
+  width:60%;
+}
+
+.information{
+  background:#ffc71a;
+  height:auto;
+  padding:5em 0;
+}
+
+.information .information__content{
+  padding:0;
+  display:-ms-grid;
+  display:grid;
+  -ms-grid-columns:45% 40%;
+      grid-template-columns:45% 40%;
+  grid-gap:15%;
+}
+
+.information .information__content__about{
+  font-family:sans-serif;
+}
+
+.information .information__content__about__subtitle{
+  margin:0;
+  font-size:1.3em;
+}
+
+.information .information__content__about__title{
+  margin:10px 0;
+  font-size:2em;
+}
+
+.information .information__content__about__text{
+  margin:0 0 50px;
+  text-align:left;
+  padding:0;
+  font-size:.9em;
+}
+
+.information .information__content__about__button{
+  text-decoration:none;
+  padding:15px 20px;
+}
+
+.information .information__content__contact{
+  background:#fff;
+  border-radius:5px;
+  box-shadow:0 4px 4px 0 rgba(0,0,0,.5),0 1px 5px 0 rgba(0,0,0,.2),0 5px 5px -5px rgba(0,0,0,.1);
+}
+
+.information .information__content__contact .contact-header{
+  background:#000;
+}
+
+.information .information__content__contact .contact-header h1{
+  padding:15px 0 15px 30px;
+  color:#fff;
+  margin:0;
+}
+
+.information .information__content__contact .contact-header h1 span{
+  color:#ffc71a;
+}
+
+.information .information__content__contact .form-contact{
+  padding:15px 30px;
+}
+
+.information .information__content__contact .form-contact .row-input{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between;
+}
+
+.information .information__content__contact .form-contact .row-input input,.information .information__content__contact .form-contact .row-input select{
+  font-family:sans-serif;
+  font-weight:700;
+  width:150px;
+  display:block;
+  border:none;
+  margin:15px 0 0;
+  padding:10px 0;
+  border-bottom:1px solid #000;
+  transition:all .3s cubic-bezier(.64,.09,.08,1);
+  background-position:-200px 0;
+  background-size:200px 100%;
+  background-repeat:no-repeat;
+  color:#000;
+}
+
+.information .information__content__contact .form-contact .row-input input:focus,.information .information__content__contact .form-contact .row-input input:valid,.information .information__content__contact .form-contact .row-input select:focus,.information .information__content__contact .form-contact .row-input select:valid{
+  box-shadow:none;
+  outline:none;
+  background-position:0 0;
+}
+
+.information .information__content__contact .form-contact .row-input input:focus::-webkit-input-placeholder,.information .information__content__contact .form-contact .row-input input:valid::-webkit-input-placeholder,.information .information__content__contact .form-contact .row-input select:focus::-webkit-input-placeholder,.information .information__content__contact .form-contact .row-input select:valid::-webkit-input-placeholder{
+  font-family:sans-serif;
+  font-weight:700;
+  color:#000;
+  font-size:1.2em;
+  visibility:visible !important;
+}
+
+.information .information__content__contact .form-contact .row-input input:focus:-ms-input-placeholder,.information .information__content__contact .form-contact .row-input input:valid:-ms-input-placeholder,.information .information__content__contact .form-contact .row-input select:focus:-ms-input-placeholder,.information .information__content__contact .form-contact .row-input select:valid:-ms-input-placeholder{
+  font-family:sans-serif;
+  font-weight:700;
+  color:#000;
+  font-size:1.2em;
+  visibility:visible !important;
+}
+
+.information .information__content__contact .form-contact .row-input input:focus::placeholder,.information .information__content__contact .form-contact .row-input input:valid::placeholder,.information .information__content__contact .form-contact .row-input select:focus::placeholder,.information .information__content__contact .form-contact .row-input select:valid::placeholder{
+  font-family:sans-serif;
+  font-weight:700;
+  color:#000;
+  font-size:1.2em;
+  visibility:visible !important;
+}
+
+.information .information__content__contact .form-contact .row-input select{
+  width:100%;
+}
+
+.information .information__content__contact .form-contact .row-button button{
+  padding:15px 20px;
+  margin:30px 0;
+  width:100%;
+}
+
+.tariffs{
+  height:100vh;
+}
+
+.tariffs__content{
+  padding:50px 0;
+  text-align:center;
+}
+
+.tariffs__content__title{
+  margin:10px 0;
+}
+
+.tariffs__content__title h1{
+  margin:0;
+}
+
+.tariffs__content__title h2{
+  margin:5px 0;
+}
+
+.tariffs__content__card{
+  display:-ms-grid;
+  display:grid;
+  -ms-grid-columns:1fr 1fr 1fr;
+      grid-template-columns:1fr 1fr 1fr;
+  grid-column-gap:2em;
+}
+
+.tariffs__content__card__cards__back{
+  border-radius:3px;
+  margin:0;
+  background:#efefef;
+  transition:.25s ease-out;
+  font-family:sans-serif;
+  box-shadow:0 4px 4px 0 hsla(0,0%,94%,.5),0 1px 5px 0 rgba(0,0,0,.2),0 5px 5px -5px rgba(0,0,0,.1);
+  padding:0 20px 50px;
+}
+
+.tariffs__content__card__cards__back:hover{
+  background:#ffc71a;
+  transition:.25s ease-out;
+}
+
+.tariffs__content__card__cards__back img{
+  position:relative;
+  top:-50px;
+  width:100%;
+}
+
+.tariffs__content__card__cards__back h2{
+  margin:0;
+}
+
+.tariffs__content__card__cards__back p{
+  margin:25px 0;
+  font-size:.9em;
+}
+
+.tariffs__content__card__cards__back h4{
+  margin:30px 0;
+  color:#ffc71a;
+  font-size:2em;
+}
+
+.tariffs__content__card__cards__back a{
+  cursor:pointer;
+  padding:15px 20px;
+}
+
+.tariffs__content__card__cards__back:hover>a{
+  background:#000;
+  color:#fff;
+  transition:.25s ease-out;
+}
+
+.tariffs__content__card__cards__back:hover>h4{
+  color:#000;
+}
+
+/*# sourceMappingURL=styles.css.map */

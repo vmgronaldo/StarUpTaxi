@@ -1,0 +1,14 @@
+$max-width: 1344px;
+$max-width2: 1024px;
+.l-container {
+    width: 100%;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    &--secondary {
+        width: 100%;
+        max-width: $max-width2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,4 +1,89 @@
 extends ../includes/template
 block main
-  h1 Hola mundo
-  p Proyecto funcionando
+  div.header 
+    div.header__hero
+      header(class="header-main") 
+        div(class="contenedor-header l-container")
+          div.main-logo
+            a(href="#")
+              img(class="logo-img" src="img/logo.png", alt="")
+          div.content-menu
+            nav.main-menu
+              ul(class="main-nav")
+                li(class="main-nav__item")
+                  a(class="main-nav__item__link--active") home
+                li(class="main-nav__item")
+                  a(class="main-nav__item__link") about
+                li(class="main-nav__item")
+                  a(class="main-nav__item__link") features
+                li(class="main-nav__item")
+                  a(class="main-nav__item__link") blog
+                li(class="main-nav__item")
+                  a(class="main-nav__item__link") order
+                li(class="main-nav__item")
+                  a(class="main-nav__item__link") contact
+      .banner-main
+        div(class="banner-main__content l-container")
+          h1.banner-main__content__title BOOK CAB NOW
+          h2.banner-main__content__subtitle +123 4567 8900
+          h3.banner-main__content__web www.taxtapp.com.pe
+          img(class="banner-main__content__img" src="img/taxi.png", alt="")
+
+  section.information
+    div(class="information__content l-container--secondary")
+      .information__content__about
+        h4.information__content__about__subtitle BEST IN CITY
+        h1.information__content__about__title TRUSTED CAB SERVIES IN NEW YORK
+        p.information__content__about__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        a(href="#" class="information__content__about__button btn btn--primary") READ MORE 
+      .information__content__contact
+        .contact-header
+          h1.contact-heade__title BOOK A 
+            span CAB
+        form.form-contact(action="")
+          div.row-input
+            input(type="text" placeholder="Name")
+            input(type="text" placeholder="Phone")
+            input(type="text" placeholder="When")
+            input(type="text" placeholder="Time")
+            input(type="text" placeholder="Start")
+            input(type="text" placeholder="End")
+            select(placeholder="Choose Vehicle")
+              option(value="") Chosse Vehicle
+          div.row-button
+            button(class="btn btn--secondary") SUBMIT
+
+  section.tariffs
+    div(class="tariffs__content l-container--secondary")
+      .tariffs__content__title
+        h1 OUR
+        h2 TARIFFS
+      .tariffs__content__card
+        .tariffs__content__card__cards
+          .tariffs__content__card__cards__back
+            img(src="img/taxi.png", alt="")       
+            h2 ECONOMY CLASS
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            h4 $1,5/MI
+            a(class="btn btn--third") READ MORE
+        .tariffs__content__card__cards
+          .tariffs__content__card__cards__back
+            img(src="img/taxi.png", alt="")       
+            h2 ECONOMY CLASS
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            h4 $1,5/MI
+            a(class="btn btn--third") READ MORE
+        .tariffs__content__card__cards
+          .tariffs__content__card__cards__back
+            img(src="img/taxi.png", alt="")       
+            h2 ECONOMY CLASS
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            h4 $1,5/MI
+            a(class="btn btn--third") READ MORE
+      
+    
+
+
+        
+
+  
